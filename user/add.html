@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
     />
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
       .bd-placeholder-img {
@@ -111,7 +111,7 @@
 
     <!-- Custom styles for this template -->
     <link href="sidebars.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/myStyle.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -268,7 +268,7 @@
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="/" class="nav-link active" aria-current="page">
+            <a href="../index.html" class="nav-link text-white" aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home" />
               </svg>
@@ -277,7 +277,7 @@
           </li>
           
           
-            <a href="./user/add.html" class="nav-link text-white">
+            <a href="../user/add.html" class="nav-link text-white active">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
@@ -294,7 +294,7 @@
             aria-expanded="false"
           >
             <img
-              src="./image/myImg.jpg"
+              src="../image/myImg.jpg"
               alt=""
               width="32"
               height="32"
@@ -332,41 +332,57 @@
           </div>
         </nav>
         <!-- <h1>table</h1> -->
-        <table style="width: 98% !important;" class="table table-bordered table-striped mt-5 mx-auto text-center">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Full Name</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Country</th>
-              <th scope="col">Age</th>
-              <th scope="col">Last updated</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>khaoula bzrt</td>
-              <td>Famme</td>
-              <td>alger</td>
-              <td>25</td>
-              <td>a day ago</td>
-              <td >
-                <a class="btn btn-primary btn-sm "  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View details"  href="./user/view.html"><i class="bi bi-eye  "></i></a>
-                <a class="btn btn-primary btn-sm "  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit user"  href="./user/Edit.html"><i class="bi bi-pencil-fill "></i></a>
-                <a class="btn btn-danger btn-sm "  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="delete user" ><i class="bi bi-trash3-fill "></i></a>
-                
-              </td>
-            </tr>
-            
-          </tbody>
-        </table>
+        <form class="row mt-5">
+            <div class="col-md-6"> <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="khaoula...">
+              </div> 
+            </div>
+            <div class="col-md-6"> <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Bouzarti...">
+              </div>   </div>
+            <div class="col-md-6"> <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="BKHAOULA@gmail.com">
+              </div>   </div>
+            <div class="col-md-6">
+                 <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telephone:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234...">
+              </div>   </div>
+        </form>
+        <div>
+            <div class="col-md-6 mb-2">
+                <label for="inputage4" class="form-label">Age:</label>
+                <input placeholder="Your Age: ..." type="number" class="form-control" id="inputage4">
+            </div>
+
+            <div class="col-md-6 mb-2">
+                <label for="inputage4" class="form-label">Country:</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>choose ..</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-2">
+                <label for="inputage4" class="form-label">Gender:</label>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected >choose ..</option>
+                    <option value="1">Male</option>
+                    <option value="2">Famale</option>
+                  </select>
+                </div>
+                  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+        </div>
       </section>
     </main>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-    <script src="./js/sidebars.js"></script>
+    <script src="../js/sidebars.js"></script>
   </body>
 </html>
 
