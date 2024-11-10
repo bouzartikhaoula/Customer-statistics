@@ -277,7 +277,7 @@
           </li>
           
           
-            <a href="../user/add.html" class="nav-link text-white active">
+            <a href="../user/add.html" class="nav-link text-white ">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
@@ -331,6 +331,16 @@
             </form>
           </div>
         </nav>
+
+        <nav class="mt-4 d-flex flex-wrap justify-content-md-between mx-md-3" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item "><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">khaoula </li>
+            </ol>
+            <p><span class="fw-medium fs-5">id :</span>123LEMLQF3LRRDL333</p>
+          </nav>
+
+
         <!-- <h1>table</h1> -->
         <form class="row mx-0 mt-5">
             <div class="col-md-6"> <div class="mb-3">
@@ -350,57 +360,59 @@
                  <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Telephone:</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234...">
-              </div>   </div>
-        </form>
-        <div>
-            <div class="col-md-6 mb-2">
-                <label for="inputage4" class="form-label">Age:</label>
-                <input placeholder="Your Age: ..." type="number" class="form-control" id="inputage4">
+              </div>   
             </div>
-
-            <div class="col-md-6 mb-2">
-                <label for="inputage4" class="form-label">Country:</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>choose ..</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-              </select>
-            </div>
-            <div class="col-md-6 mb-2">
-                <label for="inputage4" class="form-label">Gender:</label>
-
+            <div>
+                <div class="col-md-6 mb-2">
+                    <label for="inputage4" class="form-label">Age:</label>
+                    <input placeholder="Your Age: ..." type="number" class="form-control" id="inputage4">
+                </div>
+    
+                <div class="col-md-6 mb-2">
+                    <label for="inputage4" class="form-label">Country:</label>
                 <select class="form-select" aria-label="Default select example">
-                    <option selected >choose ..</option>
-                    <option value="1">Male</option>
-                    <option value="2">Famale</option>
+                    <option selected>choose ..</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
                   </select>
                 </div>
-                <div class="d-flex my-3 ">
-                    <button type="submit" class="btn btn-primary me-2 " >Update Changes</button>
-                    <button type="button" class="btn btn-danger "data-bs-toggle="modal" data-bs-target="#exampleModal">Delete Customer</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Customer
-                            </h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure you want to continue delete the customer?
-
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-danger">Delete</button>
+                <div class="col-md-6 mb-2">
+                    <label for="inputage4" class="form-label">Gender:</label>
+    
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected >choose ..</option>
+                        <option value="1">Male</option>
+                        <option value="2">Famale</option>
+                      </select>
+                    </div>
+                    <div class="d-flex my-3 ">
+                        <button type="submit" class="btn btn-primary me-2 " >Update Changes</button>
+                        <button type="button" class="btn btn-danger "data-bs-toggle="modal" data-bs-target="#exampleModal">Delete Customer</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Customer
+                                </h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to continue delete the customer?
+    
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-danger">Delete</button>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                
-                </div>
-                
-        </div>
+                    
+                    </div>
+                    
+            </div>
+        </form>
+        
       </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
