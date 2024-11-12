@@ -252,10 +252,10 @@
     </svg>
 
     <main class="d-flex flex-nowrap">
-      <h1 class="visually-hidden">Sidebars examples</h1>
 
       <div
-        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+      id="sidebarId"
+        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
         style="width: 280px"
       >
         <a
@@ -263,25 +263,27 @@
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         >
           <Div><i class="bi bi-lightning-charge"></i></Div>
-          <span class="fs-4">Sidebar</span>
+          <span class="fs-4 sidbarText">Sidebar</span>
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="/" class="nav-link active" aria-current="page">
+            <a href="/" class="nav-link active " aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home" />
               </svg>
-              Home
+              <span class="sidbarText">Home</span>
+              
             </a>
           </li>
           
           
-            <a href="./user/add.html" class="nav-link text-white">
+            <a href="./user/add.html" class="nav-link text-white ">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
-              Add Customers
+              <span class="sidbarText">              Add Customers
+</span>
             </a>
           </li>
         </ul>
@@ -300,7 +302,7 @@
               height="32"
               class="rounded-circle me-2"
             />
-            <strong>Khaoula</strong>
+            <strong class="sidbarText">Khaoula</strong>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
             <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -317,7 +319,22 @@
       <section class="container w-100">
         <nav class="navbar bg-body-tertiary">
           <div class="container-fluid justify-content-center justify-content-md-between mb-md-1">
-            <a class="navbar-brand " style="font-family:cursive ;">Customer statistics</a>
+           
+           
+            <a class="navbar-brand " style="font-family:cursive ;">
+              <button onclick="toggleSidebar()" class="btn myButton">
+                <style>
+                  .bi-list::before{
+                    transform: scaleX(1.4);
+                    font-size: 2rem;
+                  }
+                  .myButton:hover{
+                    border: 1px solid rgb(167, 170, 179);
+                  }
+                </style>
+                <i class="bi bi-list" ></i>
+              </button>
+              Customer statistics</a>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -367,6 +384,14 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/sidebars.js"></script>
+    <script>
+      const toggleSidebar = () => { 
+        console.log("hi");
+        sidebarId.classList.toggle("small-sidebar")
+
+        
+       }
+</script>
   </body>
 </html>
 

@@ -2,3 +2,27 @@
 margin-right: 1rem;
 font-size: 1.9rem;
 }
+
+.sidebar{
+    transition: 0.3s;
+}
+.small-sidebar{
+    width: 77px !important;
+}
+
+.small-sidebar .sidbarText{
+    display: none;
+}
+
+ .bi-lightning-charge{
+    rotate:360deg;
+    transition: 1s;
+}
+.small-sidebar .bi-lightning-charge::before{
+    content:"\F46C";
+    transform: rotatey(360deg);
+    transition: 1s;
+    margin-left: 0.55rem;
+    /* padding-top: 3rem; */
+    
+}
