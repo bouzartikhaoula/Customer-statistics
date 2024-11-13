@@ -252,36 +252,47 @@
     </svg>
 
     <main class="d-flex flex-nowrap">
-      <h1 class="visually-hidden">Sidebars examples</h1>
-
       <div
-        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+      id="sidebarId"
+        class="  position-relative d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
         style="width: 280px"
       >
+
+      <span style="right: 10px; top: 25px; " class="position-absolute   translate-middle p-2   ">
+      <button onclick="toggleSidebar()" class="btn  ">
+          <i  style="color: #99979c;" class="bi bi-x-circle fs-4 "></i>  
+        </button>
+          </span>
+       
+
+
         <a
           href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         >
           <Div><i class="bi bi-lightning-charge"></i></Div>
-          <span class="fs-4">Sidebar</span>
+          <span class="fs-4 sidbarText">Sidebar</span>
         </a>
+
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="../index.html" class="nav-link text-white" aria-current="page">
+            <a href="/" class="nav-link text-white " aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home" />
               </svg>
-              Home
+              <span class="sidbarText">Home</span>
+              
             </a>
           </li>
           
           
-            <a href="../user/add.html" class="nav-link text-white ">
+            <a href="./user/add.html" class="nav-link text-white ">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
-              Add Customers
+              <span class="sidbarText">              Add Customers
+</span>
             </a>
           </li>
         </ul>
@@ -294,13 +305,13 @@
             aria-expanded="false"
           >
             <img
-              src="../image/myImg.jpg"
+              src="./image/myImg.jpg"
               alt=""
               width="32"
               height="32"
               class="rounded-circle me-2"
             />
-            <strong>Khaoula</strong>
+            <strong class="sidbarText">Khaoula</strong>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
             <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -385,7 +396,7 @@
       </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
-
+<script src="../js/main.js"></script>
     <script src="../js/sidebars.js"></script>
   </body>
 </html>
