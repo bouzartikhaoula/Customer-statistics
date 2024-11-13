@@ -251,13 +251,22 @@
       </symbol>
     </svg>
 
-    <main class="d-flex flex-nowrap">
+    <main class="d-flex flex-nowrap ">
 
       <div
       id="sidebarId"
-        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
+        class="  position-relative d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
         style="width: 280px"
       >
+
+      <span style="right: 10px; top: 25px; " class="position-absolute   translate-middle p-2   ">
+      <button onclick="toggleSidebar()" class="btn  ">
+          <i  style="color: #99979c;" class="bi bi-x-circle fs-4 "></i>  
+        </button>
+          </span>
+       
+
+
         <a
           href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
@@ -265,6 +274,7 @@
           <Div><i class="bi bi-lightning-charge"></i></Div>
           <span class="fs-4 sidbarText">Sidebar</span>
         </a>
+
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
@@ -322,18 +332,7 @@
            
            
             <a class="navbar-brand " style="font-family:cursive ;">
-              <button onclick="toggleSidebar()" class="btn myButton">
-                <style>
-                  .bi-list::before{
-                    transform: scaleX(1.4);
-                    font-size: 2rem;
-                  }
-                  .myButton:hover{
-                    border: 1px solid rgb(167, 170, 179);
-                  }
-                </style>
-                <i class="bi bi-list" ></i>
-              </button>
+             
               Customer statistics</a>
             <form class="d-flex" role="search">
               <input
@@ -384,14 +383,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/sidebars.js"></script>
-    <script>
-      const toggleSidebar = () => { 
-        console.log("hi");
-        sidebarId.classList.toggle("small-sidebar")
-
-        
-       }
-</script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
 
